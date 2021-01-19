@@ -16,8 +16,11 @@ function loadAjax()
                 let id = node["id"];
                 let _status = "OFF";
                 let _pos = node['position'];
-                $("#po-"+id).text(PosEnum[_pos]);
-                let back_color = 'white'
+                if (_pos === 255) {
+                    $("#po-"+id).text("Unknow");
+                }
+                else $("#po-"+id).text(PosEnum[_pos]);
+                let back_color = 'white';
                 switch (node['status']) {
                     case 1:
                         _status = "ON";
@@ -62,7 +65,7 @@ let ids = [15306, 15307, 15308, 15309];
 
 
 loadAjax();
-setInterval( loadAjax, 10000);
+setInterval( loadAjax, 5000);
 
 function sendAction(id, value)
 {

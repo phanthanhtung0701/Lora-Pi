@@ -31,7 +31,7 @@ class NodeModel
 
     public static function getAllNode() {
         $data = DB::table('node')
-            ->select('id', 'name', 'position', 'status', 'action')
+            ->select('id', 'name', 'position', 'status', 'action', 'update_time')
             ->distinct()
             ->get()
             ->toArray();
@@ -40,6 +40,14 @@ class NodeModel
     }
 
     public static function updateAction($id, $data) {
+        return DB::table('node')
+            ->where('id', $id)
+            ->update(
+                $data
+            );
+    }
+
+    public static function updateStatus($id, $data) {
         return DB::table('node')
             ->where('id', $id)
             ->update(

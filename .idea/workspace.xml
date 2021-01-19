@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="143e3a38-c9c8-4be0-b0df-04a803df772f" name="Default Changelist" comment="" />
+    <list default="true" id="143e3a38-c9c8-4be0-b0df-04a803df772f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/NodeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/NodeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/NodeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/NodeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/node.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +29,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,6 +145,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mpHEOSdfqhNqhEIg7iv77qG8v1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -176,11 +190,25 @@
       <workItem from="1610683957504" duration="6112000" />
       <workItem from="1610690359468" duration="4033000" />
       <workItem from="1610892887037" duration="7682000" />
+      <workItem from="1611030275519" duration="7366000" />
+      <workItem from="1611076110764" duration="104000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="106" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610377622779">

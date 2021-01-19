@@ -69,10 +69,12 @@ class NodeController extends Controller
     public function info(Request $request)
     {
         $req = $request->all();
+        $date_update = date('Y-m-d H:i:s', strtotime('now'));
         $data = [
             'id' => $req['id'],
             'position' => $req['position'],
-            'status' => $req['status']
+            'status' => $req['status'],
+            'update_time' => $date_update
         ];
         NodeModel::updateNode($data);
 //        $data = NodeModel::getNode($req['id']);
@@ -94,6 +96,12 @@ class NodeController extends Controller
 
     public function getAllNode(Request $request) {
         $data = NodeModel::getAllNode();
+//        foreach ($data as $node) {
+//            $update_time = $node->update_time;
+//            if ((strtotime('now') - strtotime($update_time) > 300)) {
+//                NodeModel::updateStatus($node->id, ['status' => 16]);
+//            }
+//        }
         return response()->json($data, Response::HTTP_OK);
     }
 
@@ -142,10 +150,16 @@ class NodeController extends Controller
     public function getAllAction(Request $request) {
         $response = NodeModel::getAllAction();
         if ($response) {
+            $rep = [
+                $response[0]->id => $response[0]->action,
+                $response[1]->id => $response[1]->action,
+                $response[2]->id => $response[2]->action,
+                $response[3]->id => $response[3]->action
+            ];
             $json = [
                 'success' => true,
                 'status' => Response::HTTP_OK,
-                'data' => $response
+                'data' => $rep
             ];
             return response()->json($json, Response::HTTP_OK);
         }
