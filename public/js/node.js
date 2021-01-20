@@ -1,7 +1,7 @@
 
 const PosEnum =
     ["Trần Duy Hưng", "Lê Trọng Tấn", "Giảng Võ",
-        "Giải Phóng", "Yên Lãng", "Trần Đại Nghĩa", "Tạ Quang Bửu"];
+        "Giải Phóng", "Yên Lãng", "Trần Đại Nghĩa", "Tạ Quang Bửu", "C9", "D3", "CFL", "Cổng TĐN"];
 
 let nodeData = []
 function loadAjax()

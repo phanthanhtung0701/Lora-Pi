@@ -12,7 +12,7 @@ class NodeModel
         DB::table('node')
             ->where('id',$data['id'])
             ->update([
-                'position' => $data['position'],
+//                'position' => $data['position'],
                 'status' => $data['status'],
                 'update_time' => $now
             ]);
