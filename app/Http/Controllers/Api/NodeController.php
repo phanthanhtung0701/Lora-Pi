@@ -96,12 +96,12 @@ class NodeController extends Controller
 
     public function getAllNode(Request $request) {
         $data = NodeModel::getAllNode();
-//        foreach ($data as $node) {
-//            $update_time = $node->update_time;
-//            if ((strtotime('now') - strtotime($update_time) > 300)) {
-//                NodeModel::updateStatus($node->id, ['status' => 16]);
-//            }
-//        }
+        foreach ($data as $node) {
+            $update_time = $node->update_time;
+            if ((strtotime('now') - strtotime($update_time) > 180)) {
+                NodeModel::updateStatus($node->id, ['status' => 16]);
+            }
+        }
         return response()->json($data, Response::HTTP_OK);
     }
 
