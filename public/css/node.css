@@ -35,6 +35,10 @@
     background-color: yellow;
 }
 
+.btn-dis {
+    background-color: red;
+}
+
 .btn-clicked {
     background-color: blue;
 }

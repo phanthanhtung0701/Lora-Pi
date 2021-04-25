@@ -65,6 +65,7 @@
         <button class="btn-on btn"></button> Đèn bật
         <button class="btn-off btn"></button> Đèn tắt
         <button class="btn-err btn"></button> Đèn lỗi
+        <button class="btn-dis btn"></button> Mất kết nối
     </div>
 </footer>
 </html>

@@ -30,9 +30,17 @@ function loadAjax()
                         _status = "OFF";
                         back_color = 'lightGrey';
                         break;
-                    default:
+                    case 16:
                         _status = "OFF";
                         back_color = 'yellow';
+                        break;
+                    case 17:
+                        _status = "OFF";
+                        back_color = 'yellow';
+                        break;
+                    default:
+                        _status = "OFF";
+                        back_color = 'red';
                 }
 
                 $("#node-"+id).css('background-color',back_color);
